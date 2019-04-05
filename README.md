@@ -10,10 +10,10 @@ The Gamboy would then attempt to copy a gameROM into Ram & then flash it to SA02
 This would enable more than 3 Gameroms to be used on the multicart.
 
 
-not sure where to add notes for changes, so put them here for now
-searched & replaced for HOME to ROM0, BSS to WRAM?
-changed the code for searching roms (nintendo logo) to use registers b & c instead of push af, pop af
-the getmodules section is now simplified
-added push bc to the Draw_Titles subroutine
-used memcopy to put the Draw_Titles & check logo into WRAM, the wram versions are WR_Draw_Titles & WR_Check_Logo
-this was necessary because ROM0 copies of the subs would get banked out
+not sure where to add notes for changes, so put them here for now:
+#searched & replaced for HOME to ROM0, BSS to WRAM?
+#changed the code for searching roms (nintendo logo) to use registers b & c instead of push af, pop af
+#the getmodules section is now simplified
+#added push bc to the Draw_Titles subroutine
+#used memcopy to put the Draw_Titles & check logo into WRAM, the wram versions are WR_Draw_Titles & WR_Check_Logo
+#this was necessary because ROM0 copies of the subs would get banked out
